@@ -1,0 +1,354 @@
+@font-face {
+	font-family: "beer_money";
+	src: url("../fonts/beer_money/beer_money.ttf");
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+	color: #ffffff;
+	text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+.index-image
+{
+	margin-top:3%;
+}
+
+
+.cover-container {
+	max-width: 42em;
+}
+
+
+.container-fluid {
+
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container, nav, .navbar, .fill-space{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+ }
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+html, body {
+	margin:0px;
+	height:100%;
+}
+
+.table-user-data{
+	margin-left:24%;
+	margin-top: 3.95%;
+	height: 172px;
+	width: 744px;
+}
+
+.text-user-data{
+	margin-left: 43.5%;
+	padding : 0.9%;
+	padding-top: 1.4%;
+	padding-bottom: 1.2%;
+	font-family: 'beer_money';
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	border-radius: 30px;
+	color: rgb(0, 0, 0);
+}
+
+.nav-masthead .nav-link {
+	padding: .25rem 0;
+	font-weight: 700;
+	color: rgba(255, 255, 255, .5);
+	background-color: transparent;
+	border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+	border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+	margin-left: 1rem;
+}
+
+.nav-masthead .active {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+
+	.vertical-center-row {
+		display: flex;
+		align-items: center !important;
+		vertical-align: middle !important;
+	}
+}
+
+.body {
+
+	background-image: url(../imgs/22.jpg);
+		
+}
+
+.calculator-myaccount-box {
+	display: block;
+	width: 86%;
+	min-height: 16em;
+	margin-left: 5%;
+	margin-top: 2%;
+	padding: 5%;
+}
+
+
+.calculator-body {
+	background-image: url(../imgs/22.jpg);
+	
+}
+
+.calculator-signin-box {
+	border-radius: 20px;
+	display: block;
+	width: 79.35%;
+	min-height: 25em;
+	margin-top: 5%;
+	margin-left: 8.8%;
+	padding-top: 5em;
+	padding-left: 10%;
+	padding-bottom: 5.2%;
+	background-color: rgba(87, 96, 112, 0.7);
+}
+
+
+.calculator-registration-box {
+	border-radius: 20px;
+	display: block;
+	width: 79.35%;
+	min-height: 25em;
+	margin-top: 5%;
+	margin-left: 8.8%;
+	padding-top: 3em;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 4.5%;
+	background-color: rgba(87, 96, 112, 0.7);
+}
+
+.calculator-signin-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+
+.calculator-navbar {
+	background-color: #202020;
+}
+
+.calculator-navbar-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+
+.calculator-navbar-logo {
+	height: 46px;
+	
+}
+
+.calculator-main-logo {
+	min-height: 1em;
+	font-size: calc(50% + 8vw + 1vh);
+	font-family: 'beer_money';
+	color: rgb(17, 16, 20);
+	
+}
+
+.forms-text{
+	font-size: 16pt;
+	color: rgb(17, 16, 20);
+
+}
+
+.calculator-box {
+	border-radius: 20px;
+	display: block;
+	min-width: 45%;
+	min-height: 55%;
+	margin-top: 20%;
+	margin-left: 15%;
+	padding: 5%;
+	background-color: rgba(50, 55, 66, 0.5);
+}
+
+
+.calculator-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+	color: rgb(17, 16, 20);
+}
+
+.calculator-footer-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+
+.register-termsofservice-text {
+	font-size: calc(30% + 1vw + 0vh);
+}
+
+
+
+.form-signin {
+	width: auto;
+	padding: 15px;
+	margin: auto;
+}
+
+.form-signin .checkbox {
+	font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+	z-index: 2;
+}
+
+.form-floating {
+margin-bottom: 3px;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.calculator-about-logo {
+	font-size: calc(100% + 4vw + 1vh);
+	font-family: 'beer_money';
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	border-radius: 20px;
+	color: rgb(0, 0, 0);
+	
+}
+
+.calculator-myaccount-logo {
+	margin-bottom: 3%;
+	margin-right:23% ;
+	margin-left:21.75% ;
+	font-size: calc(100% + 4vw + 1vh);
+	font-family: 'beer_money';
+	border-style:dashed;
+	border-color: rgb(0, 0, 0);
+	border-width: 2px;
+	border-radius: 30px;
+	color: rgb(0, 0, 0);
+	
+}
+
+
+.calculator-about-box {
+	display: block;
+	color: rgb(0, 0, 0);
+	min-width: 60%;
+	min-height: 60%;
+	margin-top: -6.75%;
+	margin-left: 0%;
+}
+
+
+
+.profile-text {
+	
+	color: rgb(0, 0, 0);
+	
+}
+.calculator-about-logo-subtext {
+	font-size: calc(100% + 1vw + 1vh);
+	font-family: "Liberation Mono";
+	color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+.calculator-bit {
+	width: 10%;
+	height: 10%;
+}
+
+.btn-sq-lg {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.btn-sq {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.btn-sq-sm {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.btn-sq-xs {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.bgn-image {
+background-color: #212529;
+
+}
+
+.button5 {
+  border-radius: 20px;
+  margin-bottom: 2px;
+}
+
+.button6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 2px;
+  margin-top: 0px;
+}

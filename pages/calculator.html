@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>WEB lab1 calculator</title>
+		<link rel="icon" type="image/x-icon" href="../imgs/logo.svg">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="min-width=400, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="0"/>
+		
+		<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+		<link rel="stylesheet" href="../css/style.css" type="text/css">
+	</head>
+
+
+	<header class="bgn-image">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<a class="btn btn-dark" href="..\index.html" role="button"><span class="material-icons">
+				   Головна    
+				  </span></a>
+					<a class="btn btn-dark" href="..\pages\calculator.html" role="button"><span class="material-icons">
+				   Калькулятор
+					  </span></a>
+					<a class="btn btn-dark" href="..\pages\myaccount.html" role="button"><span class="material-icons">
+					  Мій профіль
+					  </span></a>
+					<a class="btn btn-dark" href="..\pages\about.html" role="button"><span class="material-icons">
+					  Про додаток
+					  </span></a>
+				  </div>
+				<form class="d-flex">
+					<div class="btn-group" role="group" aria-label="Basic outlined example">
+					  <a class="btn btn-dark" href="..\pages\signin.html" role="button"><span class="material-icons">
+						Вхід
+						</span></a>
+					 
+						
+						<a class="btn btn-dark" href="..\pages\registration.html" role="button"><span class="material-icons">
+							Реєстрація
+						</a>
+						</button>
+					</div>
+					  
+				</form>
+			  </div>
+			</div>
+		  </nav>
+	</header>
+
+	<body class="container-fluid fill-space">
+		<main class="text-white center-block flex-grow-1 calculator-body">
+			<div class="p-0  h-100 vertical-center-row col-sm-12 col-md-10 col-lg-8 col-xl-8" style="margin: auto;"> 
+				<div class="calculator-box m-auto text-center col-md-8 col-lg-7 col-xl-6">
+					<div class="row form-inline">
+						<div class="form-floating w-100 ">
+							<input id="calculator_input" type="text" class="form-control rounded-0 rounded-top rounded-bottom" style="text-align: right; font-size: 22pt;" id="floatingInput">
+							<label for="floatingInput" class="text-dark h4"></label>
+						</div>
+					</div>
+
+					<div class="h3">
+						<div class="row p-0 m-0">
+							<button class="w-50 btn-outline-danger button5" onclick="clean()">C</button>
+							<button class="w-50 button5" onclick="back()">&larr;</button>
+						</div>
+						<div class="row p-0 m-0" role="toolbar" aria-label="Toolbar with button groups" id="calculator-bits">
+							
+						</div>
+						<script type="text/javascript">
+							var calculator_bits = document.getElementById("calculator-bits");
+
+							for(var a = 0; a < 4; a++) {
+								var bit_decorator_block = document.createElement("div");
+								calculator_bits.appendChild(bit_decorator_block)
+								bit_decorator_block.setAttribute("class", "w-100 align-items-center m-0 p-0")
+
+								var bit_block = document.createElement("div");
+								bit_block.setAttribute("class", "w-100 btn-group center-block")
+
+								for(var b = 0; b < 4; b++) {
+									var new_bit = document.createElement("button");
+									new_bit.textContent = 15 - (a*4 + b);
+									new_bit.setAttribute("class", "btn btn-secondary calculator-bit border border-dark button6");
+									new_bit.setAttribute("id", "calculator-bit" + new_bit.textContent);
+									bit_block.appendChild(new_bit);
+								}
+								bit_decorator_block.appendChild(bit_block)
+							}
+							console.log(a)
+						</script>
+
+						<div class="row p-0 m-0">
+							<button class="w-25 button5" onclick="insert('+')">+</button>
+							<button class="w-25 button5" onclick="insert('-')">-</button>
+							<button class="w-25 button5" onclick="insert('*')">&times;</button>
+							<button class="w-25 button5" onclick="insert('/')">&divide;</button>
+						</div>
+						<div class="row p-0 m-0">
+							<button class="w-25 button5" onclick="insert('7')">7</button>
+							<button class="w-25 button5" onclick="insert('8')">8</button>
+							<button class="w-25 button5" onclick="insert('9')">9</button>
+							<button class="w-25 button5" onclick="insert('(')">(</button>
+						</div>
+						<div class="row p-0 m-0">
+							<button class="w-25 button5" onclick="insert('4')">4</button>
+							<button class="w-25 button5" onclick="insert('5')">5</button>
+							<button class="w-25 button5" onclick="insert('6')">6</button>
+							<button class="w-25 button5" onclick="insert(')')">)</button>
+						</div>
+						<div class="row p-0 m-0">
+							<button class="w-25 button5" onclick="insert('1')">1</button>
+							<button class="w-25 button5" onclick="insert('2')">2</button>
+							<button class="w-25 button5" onclick="insert('3')">3</button>
+							<button class="w-25 button5 btn-success" onclick="equal()">=</button>
+						</div>
+						<div class="row p-0 m-0">
+							<button class="w-50 button5" onclick="insert('0')">0</button>
+							<button class="w-50 button5" onclick="insert('.')">.</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
+
+	
+
+	<script type="javascript" src="../js/bootstrap.bundle.min.js"></script>
+</html>
+
